@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Preparation">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividades de preparación"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/registersText3"
+        android:layout_width="289dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="33dp"
+        android:text="Elige las opciones que apliquen a tu caso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnContinue2"
+        android:layout_width="308dp"
+        android:layout_height="49dp"
+        android:enabled="false"
+        android:text="Continue"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registersText3"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="279dp"
+        android:layout_height="53dp"
+        android:text="Vi los videos de preparación de la clase"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registersText3"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="279dp"
+        android:layout_height="53dp"
+        android:text="Realice los ejemplos en los videos"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="279dp"
+        android:layout_height="53dp"
+        android:text="Ninguna de las anteriores"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintVertical_bias="0.08" />
+</androidx.constraintlayout.widget.ConstraintLayout>
